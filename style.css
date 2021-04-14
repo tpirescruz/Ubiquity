@@ -292,22 +292,27 @@ h3 {
 .us {
     background-image: url(/ressources/rect.png);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
     padding: 10%;
 }
 
+.us-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .us-text {
     margin-left: 2%;
-    width: max-content;
+    width: 60%;
 }
 
 .us p {
     font-size: 1.4rem;
     text-align: left;
-    width: 70%;
 }
 
 .us h3 {
@@ -326,7 +331,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5% 10% 1% 10%;
+    padding: 5% 15% 1% 15%;
     color: white;
 }
 
@@ -340,7 +345,7 @@ footer h5 {
 
 .footer-cards li {
     display: flex;
-    margin: 10% 0;
+    margin-bottom: 10%;
 }
 
 .footer-cards .tags-container {
@@ -350,7 +355,7 @@ footer h5 {
 
 .tags-container li {
     background-color: #444444;
-    padding: 1%;
+    padding: 2%;
     margin: 3%;
 }
 
@@ -358,16 +363,61 @@ footer h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 15%;
+    width: 20%;
 }
 
-.footer-cards:nth-child(4) {}
+.footer-cards:nth-child(2) p {
+    font-size: 1.3rem;
+    color: #CCCCCC;
+}
+
+.footer-cards:nth-child(1) p {
+    font-size: 1.3rem;
+    color: #CCCCCC;
+}
+
+.footer-cards:nth-child(1) ul {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.footer-cards:nth-child(1) figure {
+    margin-right: 5%;
+}
+
+.footer-cards:nth-child(2) figure {
+    margin-right: 5%;
+}
+
+.footer-cards:nth-child(2) ul {
+    width: 100%;
+}
+
+.footer-cards:nth-child(4) figure {
+    margin-right: 10%;
+}
+
+.footer-cards:nth-child(4) div p {
+    text-align: left;
+}
+
+.footer-cards:nth-child(4) div {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5% 0;
+    width: 100%;
+}
 
 .footer-top-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.footer-bottom-container p {
+    font-size: 2rem;
+    color: #777777;
 }
 
 .footer-bottom-container {
@@ -382,5 +432,5 @@ footer h5 {
 .socials-logos {
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    width: 15%;
 }
