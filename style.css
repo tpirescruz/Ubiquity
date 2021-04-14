@@ -1,205 +1,384 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;600&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        box-sizing: border-box;
-        text-align: center;
-        font-size: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    img {
-        object-fit: contain;
-    }
-    
-    nav {
-        /* position: fixed; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 16%;
-        background-color: white;
-        width: 100%;
-    }
-    
-    .logo-section>figure:nth-child(1) {
-        margin: 0 2rem;
-    }
-    
-    h1 {
-        font-size: 1.5rem;
-        text-align: left;
-        font-family: 'Raleway', sans-serif;
-        color: #707070;
-        margin: 2% 0;
-    }
-    
-    nav div {
-        display: flex;
-        font-weight: 600;
-    }
-    
-    nav div img {
-        margin-right: 10%;
-    }
-    
-    nav div span {
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin: 10% 0;
-    }
-    
-    nav ul {
-        display: flex;
-        font-size: 1.4rem;
-    }
-    
-    nav li {
-        font-weight: 600;
-        padding: 1.5rem;
-        margin: 0 .5rem;
-    }
-    
-    nav li:hover {
-        background-color: #F16822;
-        color: white;
-        cursor: pointer;
-    }
-    
-    header {
-        background-image: url(/ressources/slider1.png);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5%;
-        height: 100vh;
-    }
-    
-    header h2 {
-        color: #F16822;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-        font-size: 4.4rem;
-        margin: 5rem 0;
-    }
-    
-    header p {
-        font-size: 2.2rem;
-        color: #333333;
-        font-family: 'Montserrat';
-        font-weight: 400;
-        margin: 10rem 0;
-    }
-    
-    .header-text-container {
-        display: flex;
-        width: 70%;
-        align-items: center;
-    }
-    
-    header img {
-        width: 3rem;
-    }
-    
-    .arrow-right {
-        rotate: 180deg;
-    }
-    
-    .cube-container {
-        display: flex;
-        margin: 2rem;
-        bottom: 0px;
-    }
-    
-    .slider-cube {
-        width: 10px;
-        height: 10px;
-        background-color: #333333;
-        margin: 5px;
-    }
-    
-    h3 {
-        font-size: 4rem;
-        color: #333333;
-    }
-    
-    .services ul {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .services-cards h4 {
-        font-family: 'Raleway';
-        font-size: 2rem;
-    }
-    
-    .services-cards p {
-        font-size: 1.2rem;
-    }
-    
-    .services-cards {
-        width: 22%;
-        height: 200px;
-        margin: 8% 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .services {
-        padding: 10% 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .services-intro-text {
-        width: 70%;
-        font-size: 1.8rem;
-    }
-    
-    .services-ims-container img {
-        width: 3rem;
-        height: 3rem;
-    }
-    
-    .services-ims-container {
-        background-color: #EEEEEE;
-        width: max-content;
-        padding: 12%;
-        border-radius: 50px;
-    }
-    
-    .about-ubi {
-        background-image: url(/ressources/bokehback.png);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10% 0 0 0;
-    }
-    
-    .about-ubi h3 {
-        color: #F16822;
-    }
-    
-    .about-ubi .slider-cube {
-        background-color: #EEEEEE;
-    }
-    
-    .about-ubi p {
-        color: #EEEEEE;
-        font-size: 1.4em;
-        width: 60%;
-    }
-    
-    .about-ubi img {
-        height: 100%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    object-fit: contain;
+}
+
+nav {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 16%;
+    background-color: white;
+    width: 100%;
+}
+
+.logo-section>figure:nth-child(1) {
+    margin: 0 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    color: #707070;
+    margin: 2% 0;
+}
+
+nav div {
+    display: flex;
+    font-weight: 600;
+}
+
+nav div img {
+    margin-right: 10%;
+}
+
+nav div span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10% 0;
+}
+
+nav ul {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+nav li {
+    font-weight: 600;
+    padding: 1.5rem;
+    margin: 0 .5rem;
+}
+
+nav li:hover {
+    background-color: #F16822;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    background-image: url(/ressources/slider1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    height: 100vh;
+}
+
+header h2 {
+    color: #F16822;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 4.4rem;
+    margin: 5rem 0;
+}
+
+header p {
+    font-size: 2.2rem;
+    color: #333333;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 10rem 0;
+}
+
+.header-text-container {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+header img {
+    width: 3rem;
+}
+
+.arrow-right {
+    rotate: 180deg;
+}
+
+.cube-container {
+    display: flex;
+    margin: 2rem;
+    bottom: 0px;
+}
+
+.slider-cube {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 4rem;
+    color: #333333;
+}
+
+.services ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-cards h4 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.services-cards p {
+    font-size: 1.2rem;
+}
+
+.services-cards {
+    width: 22%;
+    height: 200px;
+    margin: 8% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-intro-text {
+    width: 70%;
+    font-size: 1.8rem;
+}
+
+.services-ims-container img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.services-ims-container {
+    background-color: #EEEEEE;
+    width: max-content;
+    padding: 12%;
+    border-radius: 50px;
+}
+
+.about-ubi {
+    background-image: url(/ressources/bokehback.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10% 10% 0 10%;
+}
+
+.about-ubi h3 {
+    color: #F16822;
+}
+
+.about-ubi .slider-cube {
+    background-color: #EEEEEE;
+}
+
+.about-ubi p {
+    color: #EEEEEE;
+    font-size: 1.4em;
+    width: 60%;
+}
+
+.about-ubi img {
+    margin-top: 2%;
+}
+
+.posts p {
+    font-size: 1.7rem;
+}
+
+.posts {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.post-cards {
+    background-color: white;
+    padding: 2%;
+    width: 22%;
+    margin: 4% 2%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.144);
+}
+
+.post-cards img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.post-cards-text h4 {
+    margin-bottom: 5%;
+    font-size: 2.3rem;
+    font-family: 'Raleway';
+    color: #F16822;
+    font-weight: 500;
+}
+
+.post-cards-text p {
+    font-size: 1.1rem;
+}
+
+.post-cards-text {
+    width: 90%;
+    flex-direction: column;
+    margin: 10% auto;
+}
+
+.post-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.fun-facts {
+    background-image: url(/ressources/lauren-mancke-aOC7TSLb1o8-unsplash.png);
+}
+
+.opacity-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+.facts-container p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.facts-container h5 {
+    font-weight: 600;
+    font-size: 5rem;
+    color: #F16822;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.us {
+    background-image: url(/ressources/rect.png);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.us-text {
+    margin-left: 2%;
+    width: max-content;
+}
+
+.us p {
+    font-size: 1.4rem;
+    text-align: left;
+    width: 70%;
+}
+
+.us h3 {
+    color: white;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.us img {
+    border-radius: 50%;
+    width: 15em;
+}
+
+footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 10% 1% 10%;
+    color: white;
+}
+
+footer h5 {
+    color: #F16822;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-cards li {
+    display: flex;
+    margin: 10% 0;
+}
+
+.footer-cards .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags-container li {
+    background-color: #444444;
+    padding: 1%;
+    margin: 0 2%;
+}
+
+.footer-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.footer-cards:nth-child(4) {}
+
+.footer-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px #707070 solid;
+    align-items: center;
+    margin: 10% 0 0 0;
+    padding: 1% 0 0 0;
+}
+
+.socials-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
