@@ -110,20 +110,18 @@ header img {
     width: 100%;
 }
 
-
-/* .arrow-right {
+.arrow-right {
     transform: rotate(180deg);
-} */
+}
 
 header .cube-container {
-    position: absolute;
-    bottom: 1%;
+    position: relative;
+    top: 30%;
 }
 
 .cube-container {
     display: flex;
     margin: 2rem;
-    bottom: 0px;
 }
 
 .slider-cube {
@@ -446,4 +444,8 @@ footer h5 {
     display: flex;
     justify-content: space-between;
     width: 15%;
+}
+
+.red {
+    background-color: red;
 }
