@@ -14,7 +14,7 @@ img {
 }
 
 nav {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@ header h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 4.4rem;
-    margin: 5rem 0;
+    margin: 2% 0;
 }
 
 header p {
@@ -91,21 +91,31 @@ header p {
     color: #333333;
     font-family: 'Montserrat';
     font-weight: 400;
-    margin: 10rem 0;
+    margin: 10% 0;
+}
+
+.header-text-container div {
+    width: 50%;
 }
 
 .header-text-container {
     display: flex;
-    width: 70%;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
 
 header img {
-    width: 3rem;
+    width: 100%;
 }
 
 .arrow-right {
-    rotate: 180deg;
+    transform: rotate(180deg);
+}
+
+header .cube-container {
+    position: absolute;
+    bottom: 1%;
 }
 
 .cube-container {
@@ -202,7 +212,8 @@ h3 {
 }
 
 .about-ubi img {
-    margin-top: 2%;
+    margin-top: 4%;
+    width: 80%;
 }
 
 .posts p {
