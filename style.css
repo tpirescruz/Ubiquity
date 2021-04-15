@@ -21,6 +21,7 @@ nav {
     padding: 1% 16%;
     background-color: white;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .logo-section>figure:nth-child(1) {
@@ -109,9 +110,10 @@ header img {
     width: 100%;
 }
 
-.arrow-right {
+
+/* .arrow-right {
     transform: rotate(180deg);
-}
+} */
 
 header .cube-container {
     position: absolute;
