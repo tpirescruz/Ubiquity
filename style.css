@@ -15,6 +15,7 @@ img {
 
 nav {
     position: fixed;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +107,6 @@ header p {
     font-weight: 400;
     margin: 5% auto;
     width: 70%;
-
 }
 
 .header-text-container {
@@ -116,9 +116,8 @@ header p {
     align-items: center;
 }
 
-
 .my-arrow-left,
-.my-arrow-right{
+.my-arrow-right {
     height: 30px;
 }
 
@@ -148,13 +147,6 @@ h3 {
     color: #333333;
 }
 
-.services ul {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .services-cards h4 {
     font-family: 'Raleway';
     font-weight: 500;
@@ -163,20 +155,28 @@ h3 {
 
 .services-cards p {
     font-size: 1.2rem;
+    width: 90%;
+    margin: 5% auto;
+    color: #333333;
 }
 
 .services-cards {
-    width: 22%;
-    height: 200px;
-    margin: 8% 1%;
+    width: 40%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 1% 0;
+}
+
+.consultation {
+    width: 90%;
+    margin: auto;
 }
 
 .services {
-    padding: 10%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,8 +196,9 @@ h3 {
 .services-ims-container {
     background-color: #EEEEEE;
     width: max-content;
-    padding: 12%;
+    padding: 10%;
     border-radius: 50px;
+    margin: 10% auto;
 }
 
 .about-ubi {
@@ -314,23 +315,23 @@ h3 {
 
 .us {
     background-image: url(/ressources/rect.png);
-    display: flex;
-    flex-direction: column;
     color: white;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
+    padding: 7%;
 }
 
 .us-content {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
-    justify-content: center;
+    padding-left: 1%;
+    margin-bottom: 60px;
 }
 
 .us-text {
-    margin-left: 2%;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 .us p {
@@ -340,13 +341,17 @@ h3 {
 
 .us h3 {
     color: white;
-    text-align: left;
-    margin-bottom: 1%;
+    text-align: left !important;
 }
 
 .us img {
     border-radius: 50%;
     width: 15em;
+}
+
+.us figure {
+    width: max-content;
+    margin: 0 2%;
 }
 
 footer {

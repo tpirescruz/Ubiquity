@@ -26,12 +26,28 @@
 $(document).ready(function() {
     $('.carousel').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow : $(".my-arrow-left"),
-        nextArrow : $(".my-arrow-right"),
+        autoplaySpeed: 3000,
+        prevArrow: $(".my-arrow-left"),
+        nextArrow: $(".my-arrow-right"),
         dots: true,
         dotClass: $(".slider-cube"),
     });
+    $('.consultation').slick({
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+
+    })
+    $('.us').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+
+    })
 
 
 });
