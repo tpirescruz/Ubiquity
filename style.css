@@ -9,6 +9,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {}
+
 img {
     object-fit: contain;
     border: none;
@@ -321,6 +323,7 @@ h3 {
     background-image: url(/ressources/rect.png);
     color: white;
     padding: 7%;
+    overflow: hidden;
 }
 
 .us-content {
