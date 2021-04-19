@@ -11,6 +11,7 @@
 
 img {
     object-fit: contain;
+    border: none;
 }
 
 nav {
@@ -19,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 16%;
+    padding: 1% 0%;
     background-color: white;
     width: 100%;
     flex-wrap: wrap;
@@ -44,6 +45,7 @@ nav div {
 
 nav div img {
     margin-right: 10%;
+    height: 80%;
 }
 
 nav div span {
@@ -227,6 +229,8 @@ h3 {
 .about-ubi img {
     margin-top: 4%;
     width: 80%;
+    position: relative;
+    bottom: -3px;
 }
 
 .posts p {
@@ -469,3 +473,38 @@ footer h5 {
 
 
 /* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+@media only screen and (max-width: 600px) {
+    header h2 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+    .post-cards {
+        width: 70%;
+    }
+    .facts-container li {
+        width: 50%;
+        margin: 5% 0;
+    }
+    .footer-top-container {
+        flex-wrap: wrap;
+    }
+    .footer-cards {
+        width: 100%;
+    }
+    .us-content {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .footer-bottom-container p {
+        font-size: 1rem;
+    }
+    .footer-bottom-container img {
+        width: 2.5rem;
+    }
+    .socials-logos {
+        width: 40%;
+    }
+}

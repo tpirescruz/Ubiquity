@@ -1,4 +1,4 @@
-// var left = document.getElementsByClassName("arrow-left");
+// var left = document.getElementsByClassName("my-arrow-left");
 // console.log(left);
 // for (let i = 0; i < left.length; i++) {
 //     const element = left[i];
@@ -30,7 +30,6 @@ $(document).ready(function() {
         prevArrow: $(".my-arrow-left"),
         nextArrow: $(".my-arrow-right"),
         dots: true,
-        dotClass: $(".slider-cube"),
     });
     $('.consultation').slick({
         dots: true,
@@ -38,6 +37,14 @@ $(document).ready(function() {
         slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }]
+
 
 
     })
