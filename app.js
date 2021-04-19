@@ -1,5 +1,12 @@
 // var left = document.getElementsByClassName("my-arrow-left");
+// var target = document.getElementById("here");
+// var right = document.getElementsByClassName("arrow-right");
+
+
 // console.log(left);
+// console.log(right);
+
+
 // for (let i = 0; i < left.length; i++) {
 //     const element = left[i];
 //     element.addEventListener('click', function() {
@@ -9,8 +16,6 @@
 
 // }
 
-// var right = document.getElementsByClassName("arrow-right");
-// console.log(right);
 // for (let i = 0; i < right.length; i++) {
 //     const element = right[i];
 //     element.addEventListener('click', function() {
@@ -19,7 +24,6 @@
 //     })
 
 // };
-// var target = document.getElementById("here");
 
 
 
